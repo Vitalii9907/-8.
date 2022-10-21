@@ -22,9 +22,27 @@
       <!--Nav menu-->
       
     <nav class="header-nav">
-  
+      <div class="mobile-header">
     <a href="./index.html" class="header-logo">Web<span class="color-logo">Studio</span></a>
-  
+    <button
+    type="button"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    class="mobile-tricks-button js-open-menu"
+  >
+    <svg
+      width="40px"
+      height="40px"
+      aria
+      label="turn-off"
+    >
+      <use
+        class="navigation-button__icon-menu"
+        href="./img/sprite.svg#menu"
+      ></use>
+    </svg>
+  </button>
+      </div>
     <ul class="header-list-nav">
             <li class="header-item "><a href="./index.html" class="header-link current">Студія</a></li>
             <li class="header-item"><a href="./portfolio.html" class="header-link">Портфоліо</a></li>
@@ -36,13 +54,17 @@
   
         <ul class="header-list">
         <li class="header-contact">
-        <a href="mailto:info@devstudio.com" class="header-mal svg"><svg viewBox="0 0 43 32" class="header-svg" width="16" height="12"><use href="./img/sprite.svg#mail"></use></svg> info@devstudio.com</a></li>
+        <a href="mailto:info@devstudio.com" class="header-mal svg call"><svg viewBox="0 0 43 32" class="header-svg-mal" width="16" height="12"><use href="./img/sprite.svg#mail"></use></svg> info@devstudio.com</a></li>
         <li class="header-contact">
-          <a href="tel:+380961111111" class="header-tel svg"><svg viewBox="0 0 20 32" class="header-svg" width="10" height="16"><use href="./img/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a></li>
+          <a href="tel:+380961111111" class="header-tel svg"><svg viewBox="0 0 20 32" class="header-svg-tel" width="10" height="16"><use href="./img/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
+
+
+
+
+
         </header>
-      
     <main>
       
       <!--Main board-->
@@ -96,7 +118,6 @@
           </li>
           
             
-          
           <li class="adv-list">
             <div class="adv-advantage">
             <svg viewBox="0 0 32 32" width="70"><use href="./img/sprite.svg#astronaut"></use></svg>
@@ -163,12 +184,32 @@
         <h2 class="hero-team">Наша команда</h2>
         <ul class="hero-list">
           <li class="hero-li">
+            <picture>
+              <source 
+              srcset="
+              ./img/portrait/468/468-ihor-1x.jpg,
+              ./img/portrait/468/468-ihor-2x.jpg"
+              media="(max-width:767px)"
+              />
+              <source
+              srcset="
+              ./img/portrait/720/720-ihor-1x.jpg,
+              ./img/portrait/720/720-ihor-2x.jpg"
+              media="(min-width:768px)"
+               />
+               <source
+               srcset="
+               ./img/portrait/1200/1200-ihor-1x.jpg,
+              ./img/portrait/1200/1200-ihor-2x.jpg"
+              media="(min-width:1200px)"
+               />
             <img class="hero-photo"
-              src="./img/portrait/img2.jpg"
+              src="./img/portrait/1200/1200-ihor-1x.jpg"
               alt="Ігор Дем'яненко"
-              width="270"
+              
               
             />
+          </picture>
             <div class="hero-svg">
             <h3 class="hero-people">Ігор Дем'яненко</h3>
             <p lang="en" class="hero-title">Product Designer</p>
@@ -181,12 +222,33 @@
           </div>
           </li>
           <li class="hero-li">
+            <picture>
+              <source 
+              srcset="
+              ./img/portrait/468/468-olha-1x.jpg,
+              ./img/portrait/468/468-olha-2x.jpg"
+              media="(max-width:767px)"
+              />
+              <source
+              srcset="
+              ./img/portrait/720/720-olha-1x.jpg,
+              ./img/portrait/720/720-olha-2x.jpg"
+              media="(min-width:768px)"
+               />
+               <source
+               srcset="
+               ./img/portrait/1200/1200-olha-1x.jpg,
+              ./img/portrait/1200/1200-olha-2x.jpg"
+              media="(min-width:1200px)"
+               />
+            
             <img class="hero-photo"
-              src="./img/portrait/img1.jpg"
+              src="./img/portrait/1200/1200-olha-1x.jpg"
               alt="Ольга Рєпіна"
-              width="270"
+              
               
             />
+          </picture>
             <div class="hero-svg">
             <h3 class="hero-people">Ольга Рєпіна</h3>
             <p lang="en" class="hero-title">Frontend Developer</p>
@@ -199,12 +261,33 @@
           </div>
           </li>
           <li class="hero-li">
+            <picture>
+              <source 
+              srcset="
+              ./img/portrait/468/468-mykola-1x.jpg,
+              ./img/portrait/468/468-mykola-2x.jpg"
+              media="(max-width:767px)"
+              />
+              <source
+              srcset="
+              ./img/portrait/720/720-mykola-1x.jpg,
+              ./img/portrait/720/720-mykola-2x.jpg"
+              media="(min-width:768px)"
+               />
+               <source
+               srcset="
+               ./img/portrait/1200/1200-mykola-1x.jpg,
+              ./img/portrait/1200/1200-mykola-2x.jpg"
+              media="(min-width:1200px)"
+               />
+            
             <img class="hero-photo"
-              src="./img/portrait/img3.jpg"
+              src="./img/portrait/1200/1200-mykola-1x.jpg"
               alt="Микола Тарасов"
-              width="270"
+              
              
             />
+          </picture>
             <div class="hero-svg">
             <h3 class="hero-people">Микола Тарасов</h3>
             <p lang="en" class="hero-title">Marketing</p>
@@ -217,12 +300,33 @@
           </div>
           </li>
           <li class="hero-li">
+            <picture>
+              <source 
+              srcset="
+              ./img/portrait/468/468-myhailo-1x.jpg,
+              ./img/portrait/468/468-myhailo-2x.jpg"
+              media="(max-width:767px)"
+              />
+              <source
+              srcset="
+              ./img/portrait/720/720-myhailo-1x.jpg,
+              ./img/portrait/720/720-myhailo-2x.jpg"
+              media="(min-width:768px)"
+               />
+               <source
+               srcset="
+               ./img/portrait/1200/1200-myhailo-1x.jpg,
+              ./img/portrait/1200/1200-myhailo-2x.jpg"
+              media="(min-width:1200px)"
+               />
+            
             <img class="hero-photo"
-              src="./img/portrait/img4.jpg"
+              src="./img/portrait/1200/1200-myhailo-1x.jpg"
               alt="sМихайло Єрмакоh3"
-              width="270"
+              
               
             />
+          </picture>
             <div class="hero-svg">
             <h3 class="hero-people">Михайло Єрмаков</h3>
             <p lang="en" class="hero-title">UI Designer</p>
@@ -259,6 +363,7 @@
     
     <footer class="footer">
       <div class="conteiner correct"> 
+        <div class="footer-tablet">
         <div class="footer-box">
         <a href="./index.html" class="footer-logo">
           Web<span class="footer-color">Studio</span></a
@@ -285,7 +390,7 @@
           </ul>
         </address>
       </div>
-      <div>
+      <div class="footer-modern">
         <p class="join-page">Приєднуйтесь</p>
         
           <ul class="hero-link">
@@ -295,10 +400,11 @@
             <li class="hero-item"><a href="" class="icon footer__icon"><svg class="hero-svghero" viewBox="0 0 32 32" width="20"><use href="./img/sprite.svg#linkedin"></use></svg></a></li>
           </ul>
       </div>
+    </div>
       <div class="footer-form">
       <form action="" class="sub-form">
         <p class="footer-propose">Підпишіться на розсилку</p>
-        <input type="email" id="mail" placeholder="E-mail"/>
+        <input type="email" id="mail" placeholder="E-mail" class="footer-input"/>
         <button type="submit" class="footer-but">
           Підписатися <svg class="sub-svg" width="24"><use href="./img/sprite.svg#telegram"></use></svg></button>
       </form>
@@ -348,7 +454,7 @@
   <div class="checkbox">
     <svg width="11" height="8"><use href="./img/sprite.svg#itick"></use></svg>
   </div>
-  <p>Погоджуюся з розсилкою та приймаю<a href="./index.html" class="terms cond ">Умови договору</a></p>
+  <p class="accept-blank">Погоджуюся з розсилкою та приймаю<a href="./index.html" class="terms cond ">Умови договору</a></p>
 </label>
   
 
@@ -362,7 +468,105 @@
     </div>
   </div>
 
-  
+
+
+
+<!--Mobile-->
+
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-container-button js-close-menu">
+    <svg width="40px" height="40px">
+      <use href="./img/sprite.svg#mobileX"></use>
+    </svg>
+  </button>
+  <div class="mobile">
+    <ul class="mobile-list">
+      <li class="mobile-item">
+        <a href="./index.html" class="mobile-link current">Студія</a>
+      </li>
+      <li class="mobile-item">
+        <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+      </li>
+      <li class="mobile-item">
+        <a href="#" class="mobile-link">Контакти</a>
+      </li>
+    </ul>
+
+
+    <ul class="mobile-sheets">
+      <li class="mobile-contact">
+        <a
+          href="tel:+380961111111"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="mobile-link-social"
+        >
+          +38 096 111 11 11</a
+        >
+      </li>
+      <li class="mobile-contact">
+        <a
+          href="mailto:info@devstudio.com"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="mobile-link-social mail"
+        >
+          info@devstudio.com</a
+        >
+      </li>
+    </ul>
+
+
+
+    <ul class="mobile-social">
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Instagram</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Twitter</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >Facebook</a
+        >
+        <span class="mobile-border"></span>
+      </li>
+      <li class="mobile-tags">
+        <a
+          href=""
+          class="mobile-goods"
+          rel="noopener noreferrer nofollow"
+          >LinkedIn</a
+        >
+      </li>
+    </ul>
+
+  </div>
+</div>
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="./img/js/mibile-menu.js"></script>
 
   <script src="./img/js/modal.js"></script>
   </body>

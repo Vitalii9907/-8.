@@ -1,17 +1,18 @@
-
-  .main-background{
-
-    @include box(1600px, 600px);
-    
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/background/Img.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-  }
+.main-section {
+  background-color: var(--mainsection-clor);
+  color:var(--whole-white-color);
+  text-align: center;
+  min-width: 480px;
+padding-top: 118px;
+padding-bottom: 118px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/background/bckgr-480-1x.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
   
+}
   
   
   .main-button:hover {
@@ -45,26 +46,83 @@
   
   
   
-  .main-section {
-    background-color: var(--mainsection-clor);
-    color:var(--whole-white-color);
-    text-align: center;
-    min-width: 1600px;
-    background-position: center;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/background/Img.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+
   
   .main-title {
     text-transform: uppercase;
     text-align: center;
-
-    @include font (44px, 900, 1.4, 0.06em);
-   
+    @include font (26px, 900, 1.9, 0.06em);
+    
   }
+  
+
+  @media screen and (min-width: 1200px){
+    .main-title{
+      @include font (44px, 900, 1.4, 0.06em);
+    }
+  }
+
+ 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+.main-section {
+  background-image: linear-gradient(
+      hsla(235, 10%, 21%, 0.4),
+      hsla(235, 10%, 21%, 0.4)
+    ),
+    url(../img/background/bckgr-480-2x.jpg);
+}
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../img/background/bckgr-768-1x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../img/background/bckgr-768-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../img/background/bckgr-1600-1x.jpg);
+
+    &-title{
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../img/background/bckgr-1600-2x.jpg);
+  }
+}

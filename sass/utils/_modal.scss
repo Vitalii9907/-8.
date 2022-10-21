@@ -11,7 +11,7 @@
   
   .modal{
 
-    @include box(528px, 581px);
+    
    
     position: absolute;
     top: 50%;
@@ -21,10 +21,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding:40px;
+    
 
     &-article{
 
-      @include font (20px, 700, 1.2, 0.03em);
+      @include font (20px, 700, 1.5, 0.03em);
      
     text-align: center;
     letter-spacing: 0.03em;
@@ -83,9 +84,23 @@
   
   
 
-  
-  
-  
+  @media screen and (min-width: 468px) {
+    .modal{
+      min-width: 468px;
+      min-height: 609px;
+    }
+    
+  }
+
+@media screen and (min-width: 1200px) {
+  .modal{
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+}
+
+
 
    .form-element{
     display: flex;
@@ -235,12 +250,19 @@
     align-items: center;
     justify-content: center;
     }
+    &-blank{
+      @include font (12px, 400, 1.2, 0.03em);
+    }
   }
   
   
   
 
-  
+  @media screen and (min-width: 1200px){
+    .accept-blank{
+      @include font(14px, 400, 1.7, 00.03em);
+    }
+  }
   
   
   

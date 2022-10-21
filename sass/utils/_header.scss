@@ -1,6 +1,6 @@
 
  
- 
+ /*
     .header { 
         border-bottom: 1px solid var(--solid); 
 
@@ -11,10 +11,11 @@
           @include font (26px, 700, 1.2, 0.03em);
          
           
-          margin-right: 93px;
+          
           text-decoration: none;
           }
         &-list {
+          display: none;
           display: flex;
            gap: 50px;
           list-style: none;
@@ -28,6 +29,7 @@
           
           }
         &-list-nav{
+          
           display: flex;
           gap: 50px;
           list-style-type: none;
@@ -129,3 +131,206 @@
       align-items: center;
     }
     
+
+  .header-list,
+  .header-list-nav{
+    display: none;
+  }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+      
+*/
+
+
+
+
+
+.header-logo {
+  color: var(--primary-color);
+  font-family: "Raleway",sans-serif;
+
+  @include font (26px, 700, 1.2, 0.03em);
+ 
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  text-decoration: none;
+  }
+  .color-logo {
+    color: var(--simple-color);
+      font-family: "Raleway",sans-serif;
+
+      @include font (26px, 700, 1.192, 0.03em);
+ 
+  text-decoration: none;
+  }
+
+
+
+  .header { 
+    border-bottom: 1px solid var(--solid); 
+
+    &-list,
+  &-list-nav{
+    display: none;
+  }
+  }
+  
+  
+
+  @media screen and (min-width: 768px) {
+    .header-logo {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 87px;
+    }
+    .header-list-nav{
+      display: flex;
+    align-items: center;
+    list-style-type: none;  
+    }
+    .header-item:not(:last-child) {
+      margin-right: 50px;
+    }
+    .header-link{
+      position: relative;
+      color: var(--item-color);
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 31px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header-nav{
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    
+    .current{
+      color: var(--primary-color);
+    }
+    .current::after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 4px;
+  
+      @include box(100%, 5px);
+      
+      
+      background-color: var(--primary-color);
+    }
+    .header-list{
+      display:block;
+      list-style: none;
+      padding: 21px 0;
+        align-items: center;
+    }
+    .conteiner.rulles{
+      display: flex;
+      flex-direction:row;
+      
+    }
+    
+    .header-mal, 
+    .header-tel{
+
+      @include font (14px, 500, 1.142, 0.02em);
+     
+      color: var(--secondary-color);
+      
+      text-decoration: none;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-svg-mal{
+    width: 14px;
+    height: 10px;
+  }
+  .header-svg-tel{
+    width: 10px;
+    height: 14px;
+  }
+  .call{
+    margin-bottom: 10px;
+  }
+  }
+
+
+
+
+
+  @media screen and (min-width: 1200px) {
+    .header-logo {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
+      font-size: 26px;
+      line-height: 1.19;
+    }
+    .header-mal{
+      margin-bottom: -1px;
+    }
+    .header-svg-mal{
+      width: 16px;
+      height: 12px;
+    }
+    .header-svg-tel{
+      width: 10px;
+      height: 16px;
+    }
+    .header-list{
+      display:flex;
+      list-style: none;
+        align-items: center;
+        gap: 30px;
+        padding: 32px 0;
+    }
+    
+  .svg:hover{
+    fill: var(--primary-color);
+  }
+  .svg:focus{
+    fill: var(--focus-color);
+  }
+  
+    
+   .header-link:hover{
+    color: var(--primary-color);
+    }
+    
+    .header-mal:hover {
+      color: var(--primary-color);
+  }
+    .header-tel:hover{
+      color: var(--primary-color);
+  }
+  
+    .header-link:focus{
+      color:var(--focus-color)
+    }
+  
+    .header-mal:focus{
+      color:var(--focus-color)
+    }
+  
+    .header-tel:focus{
+      color:var(--focus-color)
+    }
+  
+    .current{
+      color: var(--primary-color);
+    }
+
+   
+  }
+
