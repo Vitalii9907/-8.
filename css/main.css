@@ -534,7 +534,7 @@ button {
   background-color: var(--mainsection-clor);
   color: var(--whole-white-color);
   text-align: center;
-  min-width: 480px;
+  min-width: 320px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -589,14 +589,14 @@ button {
     letter-spacing: 0.06em;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .main-section {
     background-image: linear-gradient(hsla(235deg, 10%, 21%, 0.4), hsla(235deg, 10%, 21%, 0.4)), url(../img/background/bckgr-480-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .main-section {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(hsla(235deg, 10%, 21%, 0.4), hsla(235deg, 10%, 21%, 0.4)), url(../img/background/bckgr-768-1x.jpg);
   }
 }
@@ -1177,7 +1177,7 @@ button {
 }
 @media screen and (max-width: 1199px) {
   .footer-form input {
-    width: 450px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;

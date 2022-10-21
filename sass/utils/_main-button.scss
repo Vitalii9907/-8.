@@ -2,7 +2,7 @@
   background-color: var(--mainsection-clor);
   color:var(--whole-white-color);
   text-align: center;
-  min-width: 480px;
+  min-width: 320px;
 padding-top: 118px;
 padding-bottom: 118px;
 margin-left: auto;
@@ -63,7 +63,7 @@ text-align: center;
   }
 
  
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .main-section {
@@ -76,7 +76,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 @media screen and (min-width: 768px) {
   .main-section {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(
         hsla(235, 10%, 21%, 0.4),
         hsla(235, 10%, 21%, 0.4)
