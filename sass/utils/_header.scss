@@ -224,7 +224,7 @@
   
       @include box(100%, 5px);
       
-      
+      content: "";
       background-color: var(--primary-color);
     }
     .header-list{
