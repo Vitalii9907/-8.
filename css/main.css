@@ -495,12 +495,12 @@ button {
 .mobile-list {
   list-style: none;
   margin-bottom: auto;
+  padding-bottom: 50px;
 }
 
 .mobile-sheets {
   list-style: none;
   margin-bottom: 64px;
-  padding-top: 50px;
 }
 
 .mobile-contact {
@@ -1088,14 +1088,11 @@ button {
 }
 .footer-box {
   text-align: center;
-  margin-bottom: 60px;
 }
 .footer-svg {
   fill: currentColor;
 }
 .footer-form {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 .footer-form input {
@@ -1124,9 +1121,6 @@ button {
 }
 .footer-input {
   margin-bottom: 20px;
-}
-.footer-modern {
-  margin-bottom: 60px;
 }
 .footer-but {
   font-family: inherit;
@@ -1200,6 +1194,12 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer-box {
+    margin-bottom: 60px;
+  }
+  .footer-modern {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
