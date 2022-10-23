@@ -531,7 +531,7 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .mobile-border {
